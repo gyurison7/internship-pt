@@ -2,7 +2,7 @@
 .common-margin { margin-top: 100px; } 
 .common-title { font-size: 72px; font-weight: 600; text-align: center; text-transform: uppercase; } 
 
-.main-sc { display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 80px;} 
+.main-sc { display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 80px; } 
 .main-sc .video-wrapper .common-title { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 0.12em 0.42em 0.17em; border: 2px solid var(--text-color); border-radius: 1rem; background-color: var(--em-color); white-space: nowrap; box-shadow: 10px 10px var(--text-color); -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); -webkit-border-radius: 1rem; -moz-border-radius: 1rem; -ms-border-radius: 1rem; -o-border-radius: 1rem; } 
 .main-sc .video-wrapper .main-video { border: 1px solid var(--text-color); border-radius: 1rem; -webkit-border-radius: 1rem; -moz-border-radius: 1rem; -ms-border-radius: 1rem; -o-border-radius: 1rem; } 
 
@@ -14,14 +14,29 @@
 .contents-sc .contents-wrapper .contents-box .contents-list { display: flex; flex-direction: column; margin-top: 24px; font-size: 20px; gap: 1em; } 
 .contents-sc .contents-wrapper .contents-box .contents-list li { display: flex; flex-direction: column; } 
 .contents-sc .contents-wrapper .contents-box .contents-list li .number { display: block; font-size: 14px; color: rgba(35, 35, 35, 0.4); } 
-.contents-sc .contents-wrapper .contents-box .contents-list li .contents { padding: 0.5em 1em; border: 1px solid var(--text-color); border-radius: 1.25rem; background: #fff; } 
+.contents-sc .contents-wrapper .contents-box .contents-list li .contents { border: 1px solid var(--text-color); border-radius: 1.25rem; background: #fff; } 
+.contents-sc .contents-wrapper .contents-box .contents-list li .contents a { display: block; padding: 0.5em 1em; } 
 
-.intoduction-sc { } 
-.intoduction-sc p { max-width: 45rem; margin: 0 auto; font-size: 20px; } 
+.introduction-sc { } 
+.introduction-sc p { max-width: 45rem; margin-top: 1.7em; margin-left: auto; margin-right: auto; font-size: 20px; } 
 
 .projects-sc { padding: 80px 0; background-color: #FFE3E2; } 
-.projects-sc .img-wrapper { width: 180px; height: 180px; margin: 0 auto; } 
-.projects-sc .img-wrapper img { } 
-.projects-sc .project-list { display: flex; justify-content: center; margin-top: 80px; font-size: 24px; font-weight: 600; text-align: center; gap: 5em; } 
-.projects-sc .project-list .project { flex: 1; position: relative; max-width: 320px; padding: 4.17em 1.25em; border: 2px solid var(--text-color); border-radius: 1em; background-color: #fff; box-shadow: 10px 10px var(--em-color); -webkit-border-radius: 1em; -moz-border-radius: 1em; -ms-border-radius: 1em; -o-border-radius: 1em; } 
-.projects-sc .project-list .project .number { display: flex; justify-content: center; align-items: center; position: absolute; top: -30px; right: -30px; width: 64px; height: 64px; border-radius: 8px; background-color: #FF85E2; -webkit-border-radius: 8px; -moz-border-radius: 8px; -ms-border-radius: 8px; -o-border-radius: 8px; } 
+.overview-sc { } 
+.overview-sc .img-wrapper { width: 180px; height: 180px; margin: 0 auto; } 
+.overview-sc .img-wrapper img { } 
+.overview-sc .project-list { display: flex; justify-content: center; margin-top: 80px; font-size: 24px; font-weight: 600; text-align: center; gap: 5em; } 
+.overview-sc .project-list .project { flex: 1; position: relative; max-width: 350px; border: 2px solid var(--text-color); border-radius: 1em; background-color: #fff; box-shadow: 10px 10px var(--em-color); -webkit-border-radius: 1em; -moz-border-radius: 1em; -ms-border-radius: 1em; -o-border-radius: 1em; } 
+.overview-sc .project-list .project .number { display: flex; justify-content: center; align-items: center; position: absolute; top: -30px; right: -30px; width: 64px; height: 64px; border-radius: 8px; background-color: #FF85E2; -webkit-border-radius: 8px; -moz-border-radius: 8px; -ms-border-radius: 8px; -o-border-radius: 8px; } 
+.overview-sc .project-list .project a { display: block; padding: 4.17em 1.25em; } 
+
+.project-sc { display: flex; margin-left: 40px; margin-right: auto; } 
+.project-sc .content-wrapper { display: flex; justify-content: center; width: 50%; padding: 5em 1.5em; border: 1px solid var(--text-color); border-radius: 1.25rem; font-size: 20px; } 
+.project-sc .content-wrapper .content-inner { max-width: 450px; } 
+.project-sc .content-wrapper .content-inner .common-title { font-size: 60px; line-height: 1.2; } 
+.project-sc .content-wrapper .content-inner p { margin-top: 1.7em; text-align: center; } 
+.project-sc .img-wrapper { width: 50%; border: 1px solid var(--text-color); border-radius: 1.25rem; transform: translateX(-40px); } 
+.project-sc .img-wrapper img { width: 100%; height: 100%; border-radius: 1.25rem; } 
+
+.neopharm-sc .content-wrapper { background-color: #E5F9F9; } 
+.solution-sc .content-wrapper { background-color: #EBE5F9; } 
+.wordpress-sc .content-wrapper { background-color: #FFAAD2; } 
