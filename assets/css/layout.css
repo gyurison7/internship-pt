@@ -1,0 +1,6 @@
+.header { display: flex; align-items: center; position: fixed; top: 0; left: 0; z-index: 999; width: 100%; background-color: var(--bg-color); } 
+.header.on { border-bottom: 1px solid var(--text-color); } 
+.header .header-inner { display: flex; justify-content: space-between; align-items: center; width: 100%; max-width: 1480px; margin: 0 auto; padding: 10px 0; } 
+.header .header-inner .logo { width: 40px; } 
+.header .header-inner .gnb { padding-right: 10px; } 
+.header .header-inner .gnb .gnb-list { display: flex; gap: 32px; font-weight: 600; } 
