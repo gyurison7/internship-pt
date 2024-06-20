@@ -1,6 +1,17 @@
 .header { display: flex; align-items: center; position: fixed; top: 0; left: 0; z-index: 999; width: 100%; background-color: var(--bg-color); } 
 .header.on { border-bottom: 1px solid var(--text-color); } 
-.header .header-inner { display: flex; justify-content: space-between; align-items: center; width: 100%; max-width: 1480px; margin: 0 auto; padding: 20px 0; } 
+.header .header-inner { display: flex; justify-content: space-between; align-items: center; width: 100%; max-width: 1480px; margin: 0 auto; padding: 20px 10px; } 
 .header .header-inner .logo { width: 40px; } 
-.header .header-inner .gnb { padding-right: 10px; } 
-.header .header-inner .gnb .gnb-list { display: flex; gap: 32px; font-weight: 600; } 
+.header .header-inner .gnb { padding-right: 10px; font-size: 18px; } 
+.header .header-inner .gnb .gnb-list { display: flex; gap: 1.78em; font-weight: 600; } 
+.header .header-inner .gnb .gnb-list li::after { display: block; width: 0; height: 2px; background-color: var(--text-color); content: ''; transition: width 0.3s cubic-bezier(.5,0,0,1); -webkit-transition: width 0.3s cubic-bezier(.5,0,0,1); -moz-transition: width 0.3s cubic-bezier(.5,0,0,1); -ms-transition: width 0.3s cubic-bezier(.5,0,0,1); -o-transition: width 0.3s cubic-bezier(.5,0,0,1); } 
+.header .header-inner .gnb .gnb-list li:hover::after { width: 100%; } 
+
+.footer { display: flex; justify-content: center; align-items: center; position: relative; width: 100%; height: 100vh; max-height: 1080px; background-color: #C9F88C; } 
+.footer .message { font-size: 72px; font-weight: 600; text-transform: uppercase; } 
+.footer .sun { overflow: hidden; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); } 
+.footer .sun .sun-eye { position: absolute; bottom: -8px; width: 54px; height: 54px; border: 1px solid var(--text-color); border-radius: 50%; background-color: #fff; } 
+.footer .sun .sun-eye:first-of-type { left: 95px; z-index: 1; } 
+.footer .sun .sun-eye:last-child { left: 140px; } 
+.footer .sun .sun-eye img { position: absolute; right: -1px; bottom: 2px; } 
+.footer small { position: absolute; right: 20px; bottom: 20px; } 

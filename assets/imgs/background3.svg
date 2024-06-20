@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="2400px" height="114px" viewBox="0 0 2400 114" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>curved-divider</title>
+    <g id="curved-divider" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M2400,114 L0,114 L0,81 C227.455742,87.1747629 387.455742,87.1747629 480,81 C618.816388,71.7378557 801.25,1 1200,1 C1598.75,1 1777.53656,71.5024371 1920,81 C2062.46344,90.4975629 2400,81 2400,81 C2400,81 2400,92 2400,114 Z" id="Rectangle-Copy" fill="#E5F9F9"></path>
+        <path d="M-0.440673828,81 C227.30885,87.1747629 387.455742,87.1747629 480,81 C618.816388,71.7378557 801.25,1 1200,1 C1598.75,1 1777.53656,71.5024371 1920,81 C2062.46344,90.4975629 2400,81 2400,81" id="Rectangle" stroke="#111111" stroke-width="1.5"></path>
+    </g>
+</svg>
