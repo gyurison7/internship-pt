@@ -12,30 +12,44 @@ $(".more-project").click(function () {
     $(".sub-list").slideToggle();
 });
 
-gsap.from(".introduction-sc .animation-wrapper span", {
+const introductionAnimation = gsap.timeline({
     scrollTrigger: {
         trigger: ".introduction-sc",
-        start: "0% 80%",
+        start: "0% 90%",
         end: "100% 0%",
         toggleActions: "play none none reverse",
         // markers: true,
     },
-    yPercent: 120,
-    ease: "power2.inOut",
 });
+introductionAnimation
+    .from($(".introduction-sc .animation-wrapper span"), { yPercent: 120, ease: "power2.inOut" })
+    .from($(".introduction-sc .introduction-content"), { yPercent: 120, ease: "power2.inOut" }, "-=0.2");
 
 const overviewAnimation = gsap.timeline({
     scrollTrigger: {
         trigger: ".overview-sc",
         start: "0% 80%",
-        end: "100% 100%",
+        end: "100% 0%",
         toggleActions: "play none none reverse",
         // markers: true,
     },
 });
 overviewAnimation
     .from($(".overview-sc .animation-wrapper img"), { yPercent: 120, ease: "power2.inOut" })
-    .from($(".overview-sc .animation-wrapper span"), { yPercent: 120, ease: "power2.inOut" });
+    .from($(".overview-sc .animation-wrapper span"), { yPercent: 120, ease: "power2.inOut" }, "-=0.2");
+
+gsap.from(".project-list li a", {
+    scrollTrigger: {
+        trigger: ".project-list",
+        start: "0% 80%",
+        end: "100% 0%",
+        toggleActions: "play none none reverse",
+        // markers: true,
+    },
+    stagger: 0.2,
+    yPercent: 120,
+    ease: "power2.inOut",
+});
 
 gsap.utils.toArray(".project-sc").forEach((section) => {
     const imgWrapper = section.querySelector(".img-wrapper");
@@ -44,7 +58,7 @@ gsap.utils.toArray(".project-sc").forEach((section) => {
     const projectAnimation = gsap.timeline({
         scrollTrigger: {
             trigger: section,
-            start: "0% 100%",
+            start: "0% 90%",
             end: "100% 0%",
             toggleActions: "play none none reverse",
             // markers: true,
@@ -61,7 +75,7 @@ gsap.utils.toArray(".project-sc").forEach((section) => {
         .from(animationWrapper, { yPercent: 120, stagger: 0.2, ease: "power2.out" }, "-=0.3");
 });
 
-gsap.from(".plans-sc .animation-wrapper span", {
+const plansAnimation = gsap.timeline({
     scrollTrigger: {
         trigger: ".plans-sc",
         start: "0% 80%",
@@ -69,6 +83,7 @@ gsap.from(".plans-sc .animation-wrapper span", {
         toggleActions: "play none none reverse",
         // markers: true,
     },
-    yPercent: 120,
-    ease: "power2.inOut",
 });
+plansAnimation
+    .from(".plans-sc .animation-wrapper span", { yPercent: 120, ease: "power2.inOut" })
+    .from(".plans-sc .plan-list .plan-item", { yPercent: 120, stagger: 0.2, ease: "power2.inOut" }, "-=0.2");

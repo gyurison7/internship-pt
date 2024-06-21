@@ -2,8 +2,11 @@
 @import url("./layout.css");
 
 @font-face { font-family: 'PolySans'; src: url("../fonts/PolySans-Neutral.woff") format('woff'); font-weight: 400; } 
+@font-face { font-family: 'PolySans'; src: url("../fonts/PolySans-Median.woff") format('woff'); font-weight: 500; } 
 @font-face { font-family: 'PolySans'; src: url("../fonts/PolySans-Bulky.woff") format('woff'); font-weight: 600; } 
-@font-face { font-family: 'GmarketSans'; src: url("../fonts/GmarketSansMedium.otf") format('otf'); font-weight: 400; } 
-@font-face { font-family: 'GmarketSans'; src: url("../fonts/GmarketSansBold.otf") format('otf'); font-weight: 600; } 
+@font-face { font-family: 'Pretendard'; src: url("../fonts/Pretendard-Regular.woff2") format('woff2'); font-weight: 400; } 
+@font-face { font-family: 'Pretendard'; src: url("../fonts/Pretendard-Medium.woff2") format('woff2'); font-weight: 500; } 
+@font-face { font-family: 'Pretendard'; src: url("../fonts/Pretendard-SemiBold.woff2") format('woff2'); font-weight: 600; } 
+@font-face { font-family: 'Pretendard'; src: url("../fonts/Pretendard-Bold.woff2") format('woff2'); font-weight: 700; } 
 
-:root { --em-color: #ffba01; --text-color: #232323; --bg-color: #fdfcf8; --font-family-sans: "GmarketSans", Arial, sans-serif; } 
+:root { --em-color: #ffba01; --text-color: #232323; --bg-color: #fdfcf8; --font-family-pretendard: "Pretendard", Arial, sans-serif; } 
