@@ -75,6 +75,10 @@ gsap.utils.toArray(".project-sc").forEach((section) => {
         .from(animationWrapper, { yPercent: 120, stagger: 0.2, ease: "power2.out" }, "-=0.3");
 });
 
+$(".more-btn").click(function() {
+    $(this).closest(".project-sc").find(".more-modal").toggleClass("on");
+})
+
 const plansAnimation = gsap.timeline({
     scrollTrigger: {
         trigger: ".plans-sc",
